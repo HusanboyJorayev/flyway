@@ -1,7 +1,6 @@
 package com.flyway.config;
 
 import org.flywaydb.core.Flyway;
-import org.flywaydb.core.api.output.RepairResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.flyway.FlywayMigrationStrategy;
 import org.springframework.context.annotation.Bean;
@@ -12,10 +11,6 @@ public class FlyWayConfig {
     @Autowired
     private Flyway flyway;
 
-   /* @Bean
-    public RepairResult repair() {
-        return flyway.repair();
-    }*/
 
     @Bean
     public FlywayMigrationStrategy repairFlyway() {
