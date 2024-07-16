@@ -11,7 +11,6 @@ public class FlyWayConfig {
     @Autowired
     private Flyway flyway;
 
-
     @Bean
     public FlywayMigrationStrategy repairFlyway() {
         return flyway -> {
